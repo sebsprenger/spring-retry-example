@@ -11,10 +11,10 @@
 	</parent>
 
 	<groupId>de.jstco</groupId>
-	<artifactId>annotations-retryable-demo</artifactId>
+	<artifactId>spring-retry-example</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>Retry</name>
+	<name>spring-retry-example</name>
 	<description>Demonstrating how Spring's annotations work</description>
 
 	<properties>
