@@ -2,7 +2,6 @@ package de.jstco.retry.document;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.retry.annotation.Retryable;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -16,7 +15,7 @@ public class DocumentRetriever {
         System.out.println(this.getRemoteBody());
         System.out.println("footer");
     }
-
+    
     private String getRemoteBody() {
         // mimicking network failure
         log.debug("counter=" + counter);

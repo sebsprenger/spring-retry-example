@@ -15,7 +15,11 @@ class MyRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        documentRetriever.document();
+        try {
+            documentRetriever.document();
+        } catch (Exception e) {
+            System.err.println("Failure detected. kthxbye.");
+        }
     }
 
 }

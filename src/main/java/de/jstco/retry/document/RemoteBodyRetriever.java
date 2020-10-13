@@ -13,7 +13,11 @@ class RemoteBodyRetriever {
 
     @Retryable(value = {RuntimeException.class}, maxAttempts = 5)
     String getRemoteBody() throws RuntimeException {
-
+        // mimicking network failure
+        log.debug("counter=" + counter);
+        if (counter++ <= 3) {
+            throw new RuntimeException("not yet");
+        }
         return "body";
     }
 
